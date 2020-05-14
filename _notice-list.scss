@@ -1,0 +1,62 @@
+// Notice list variables
+$notice-list-item-closing-transition: 200ms ease-out;
+
+/* Notice list component prototype */
+ul.notice-list {
+	list-style: none;
+	padding-left: 0;
+
+	> li.notice-list-item {
+		background-color: $border-bg-color;
+		border-radius: $border-radius;
+		color: $fg-color;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: $block-margin;
+		padding: ($box-padding * 0.5) $box-padding;
+		transition: opacity $notice-list-item-closing-transition;
+
+		p, ul.notice-list-item-buttons {
+			margin-bottom: 0;
+		}
+
+		p {
+			padding-right: ($box-padding * 0.5);
+		}
+
+		ul.notice-list-item-buttons {
+			display: flex;
+			list-style: none;
+			margin-left: ($box-padding * -0.5);
+			padding-left: 0;
+
+			> li {
+				padding-left: ($box-padding * -0.5);
+				
+				> button {
+					background-color: transparent;
+					border: none;
+					color: rgba(0, 0, 0, 0.3);
+					cursor: pointer;
+					padding: 0;
+
+					body.no-touch &:hover {
+						color: rgba(0, 0, 0, 0.5);
+					}
+				}
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.is-closing {
+			opacity: 0;
+		}
+	}
+}
+
+/* Notice lit component extensions */
+ul.notice-list {
+}
