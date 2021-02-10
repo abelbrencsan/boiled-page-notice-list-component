@@ -27,15 +27,21 @@ The following example shows a notice with accept and dismiss buttons. `data-noti
 ```html
 <ul class="notice-list">
   <li class="notice-list-item" data-notice>
-    <p>This is a default notice.<p>
-    <ul class="notice-list-item-buttons">
-      <li>
-        <button type="button" aria-label="Accept notice" data-notice-accept>✓</button>
-      </li>
-      <li>
-        <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
-      </li>
-    </ul>
+    <div class="grid grid--gutter">
+      <div class="grid-col grid-col--fit">
+        <p>This is a default notice.<p>
+      </div>
+      <div class="grid-col">
+        <ul class="notice-list-item-buttons grid grid--gutter grid--gutter--half grid--uniform">
+          <li class="grid-col">
+            <button type="button" aria-label="Accept notice" data-notice-accept>✓</button>
+          </li>
+          <li class="grid-col">
+            <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </li>
 </ul>
 ```
@@ -47,20 +53,32 @@ The following example shows an error and a warning notice with dismiss buttons. 
 ```html
 <ul class="notice-list">
   <li class="notice-list-item notice-list-item--success" data-notice>
-    <p>This is a success notice.<p>
-    <ul class="notice-list-item-buttons">
-      <li>
-        <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
-      </li>
-    </ul>
+    <div class="grid grid--gutter">
+      <div class="grid-col grid-col--fit">
+        <p>This is a success notice.<p>
+      </div>
+      <div class="grid-col">
+        <ul class="notice-list-item-buttons grid grid--gutter grid--gutter--half grid--uniform">
+          <li class="grid-col">
+            <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </li>
   <li class="notice-list-item notice-list-item--warning" data-notice>
-    <p>This is a warning notice.<p>
-    <ul class="notice-list-item-buttons">
-      <li>
-        <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
-      </li>
-    </ul>
+    <div class="grid grid--gutter">
+      <div class="grid-col grid-col--fit">
+        <p>This is a warning notice.<p>
+      </div>
+      <div class="grid-col">
+        <ul class="notice-list-item-buttons grid grid--gutter grid--gutter--half grid--uniform">
+          <li class="grid-col">
+            <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </li>
 </ul>
 ```

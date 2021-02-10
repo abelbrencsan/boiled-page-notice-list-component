@@ -10,8 +10,6 @@ ul.notice-list {
 		background-color: $border-bg-color;
 		border-radius: $border-radius;
 		color: $fg-color;
-		display: flex;
-		justify-content: space-between;
 		margin-bottom: $block-margin;
 		padding: ($box-padding * 0.5) $box-padding;
 		transition: opacity $notice-list-item-closing-transition;
@@ -20,18 +18,9 @@ ul.notice-list {
 			margin-bottom: 0;
 		}
 
-		p {
-			padding-right: ($box-padding * 0.5);
-		}
-
 		ul.notice-list-item-buttons {
-			display: flex;
-			list-style: none;
-			margin-left: ($box-padding * -0.5);
-			padding-left: 0;
 
 			> li {
-				padding-left: ($box-padding * -0.5);
 				
 				> button {
 					background-color: transparent;
