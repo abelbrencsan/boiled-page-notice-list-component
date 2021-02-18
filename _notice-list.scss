@@ -4,6 +4,7 @@ $notice-list-item-closing-transition: 200ms ease-out;
 /* Notice list component prototype */
 ul.notice-list {
 	list-style: none;
+	margin-bottom: 0;
 	padding-left: 0;
 
 	> li.notice-list-item {
@@ -37,7 +38,7 @@ ul.notice-list {
 		}
 
 		&:last-child {
-			margin-bottom: 0;
+			margin-bottom: ($element-margin * 0.5);
 		}
 
 		&.is-closing {
