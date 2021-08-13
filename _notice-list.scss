@@ -15,11 +15,11 @@ ul.notice-list {
 		padding: ($box-padding * 0.5) $box-padding;
 		transition: opacity $notice-list-item-closing-transition;
 
-		p, ul.notice-list-item-buttons.grid {
+		p, ul.notice-list-item-button-list.grid {
 			margin-bottom: 0;
 		}
 
-		ul.notice-list-item-buttons.grid {
+		ul.notice-list-item-button-list.grid {
 
 			> li.grid-col {
 				

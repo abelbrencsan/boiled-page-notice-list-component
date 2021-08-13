@@ -16,7 +16,7 @@ Class name | Description | Example
 ---------- | ----------- | -------
 `notice-list` | Applies a notice list. | `<ul class="notice-list"></ul>`
 `notice-list-item` | Applies a notice list item inside list. | `<li class="notice-list-item"></li>`
-`notice-list-item-buttons` | Applies accept and/or dismiss buttons inside notice list item. | `<ul class="notice-list-item-buttons"></ul>`
+`notice-list-item-button-list` | Applies a list of accept and/or dismiss buttons inside notice list item. Use grid component for alignment. | `<ul class="notice-list-item-button-list grid"></ul>`
 
 ### Examples
 
@@ -32,7 +32,7 @@ The following example shows a notice with accept and dismiss buttons. `data-noti
         <p>This is a default notice.<p>
       </div>
       <div class="grid-col">
-        <ul class="notice-list-item-buttons grid grid--gutter grid--gutter--half grid--uniform">
+        <ul class="notice-list-item-button-list grid grid--gutter grid--gutter--half grid--uniform">
           <li class="grid-col">
             <button type="button" aria-label="Accept notice" data-notice-accept>✓</button>
           </li>
@@ -58,7 +58,7 @@ The following example shows an error and a warning notice with dismiss buttons. 
         <p>This is a success notice.<p>
       </div>
       <div class="grid-col">
-        <ul class="notice-list-item-buttons grid grid--gutter grid--gutter--half grid--uniform">
+        <ul class="notice-list-item-button-list grid grid--gutter grid--gutter--half grid--uniform">
           <li class="grid-col">
             <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
           </li>
@@ -72,7 +72,7 @@ The following example shows an error and a warning notice with dismiss buttons. 
         <p>This is a warning notice.<p>
       </div>
       <div class="grid-col">
-        <ul class="notice-list-item-buttons grid grid--gutter grid--gutter--half grid--uniform">
+        <ul class="notice-list-item-button-list grid grid--gutter grid--gutter--half grid--uniform">
           <li class="grid-col">
             <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
           </li>
