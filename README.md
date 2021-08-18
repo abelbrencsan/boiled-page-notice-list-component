@@ -110,7 +110,7 @@ for (var i = 0; i < noticeElems.length; i++) {
 
 #### State colored notices
 
-Add `generate-notice` to each state in SCSS variables with the value of true or false. Then you can use notices in colors of enabled states.
+Add `generate-notice-list-item` to each state in SCSS variables with the value of true or false. Then you can use notices in colors of enabled states.
 
 ```scss
 /* Notice component extensions */
@@ -118,7 +118,7 @@ ul.notice-list {
 
   // State colored notices
   @each $state in map-keys($states) {
-    @if (map-val($states, $state, generate-notice)) {
+    @if (map-val($states, $state, generate-notice-list-item)) {
       > li.notice-list-item.notice-list-item--#{$state} {
         background-color: map-val($states, $state, bg-color);
         color: map-val($states, $state, fg-color);
