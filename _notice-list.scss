@@ -15,23 +15,34 @@ ul.notice-list {
 		padding: ($box-padding * 0.5) $box-padding;
 		transition: opacity $notice-list-item-closing-transition;
 
-		p, ul.notice-list-item-button-list.grid {
-			margin-bottom: 0;
-		}
+		div.notice-list-item-text {
+			display: flex;
+			flex-flow: row wrap;
 
-		ul.notice-list-item-button-list.grid {
+			p, ul.notice-list-item-text-button-list.grid {
+				margin-bottom: 0;
+			}
 
-			> li.grid-col {
-				
-				> button {
-					background-color: transparent;
-					border: none;
-					color: rgba(0, 0, 0, 0.3);
-					cursor: pointer;
-					padding: 0;
+			p {
+				flex: 1;
+				padding-right: ($grid-gutter * 0.5);
+			}
 
-					body.no-touch &:hover {
-						color: rgba(0, 0, 0, 0.5);
+			ul.notice-list-item-text-button-list.grid {
+				flex: 0 1 auto;
+
+				> li.grid-col {
+					
+					> button {
+						background-color: transparent;
+						border: none;
+						color: rgba(0, 0, 0, 0.3);
+						cursor: pointer;
+						padding: 0;
+
+						body.no-touch &:hover {
+							color: rgba(0, 0, 0, 0.5);
+						}
 					}
 				}
 			}
