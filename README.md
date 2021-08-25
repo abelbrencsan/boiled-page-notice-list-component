@@ -16,8 +16,7 @@ Class name | Description | Example
 ---------- | ----------- | -------
 `notice-list` | Applies a notice list. | `<ul class="notice-list"></ul>`
 `notice-list-item` | Applies a notice list item. | `<li class="notice-list-item"></li>`
-`notice-list-item-text` | Applies text inside a notice list item. | `<li class="notice-list-item"></li>`
-`notice-list-item-text-button-list` | Applies a list of buttons inside notice list item text. Grid component is used for alignment. | `<ul class="notice-list-item-text-button-list grid"></ul>`
+`notice-list-item-button-list` | Applies a list of buttons inside notice list item. Grid component is used for alignment. | `<ul class="notice-list-item-button-list grid"></ul>`
 
 ### Examples
 
@@ -28,17 +27,15 @@ The following example shows a notice with accept and dismiss buttons. `data-noti
 ```html
 <ul class="notice-list">
   <li class="notice-list-item" data-notice>
-    <div class="notice-list-item-text">
-      <p>This is a default notice.</p>
-      <ul class="notice-list-item-text-button-list grid grid--gutter grid--gutter--half grid--uniform">
-        <li class="grid-col">
-          <button type="button" aria-label="Accept notice" data-notice-accept>✓</button>
-        </li>
-        <li class="grid-col">
-          <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
-        </li>
-      </ul>
-    </div>
+    <p>This is a default notice.</p>
+    <ul class="notice-list-item-button-list grid grid--gutter grid--gutter--half grid--uniform">
+      <li class="grid-col">
+        <button type="button" aria-label="Accept notice" data-notice-accept>✓</button>
+      </li>
+      <li class="grid-col">
+        <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
+      </li>
+    </ul>
   </li>
 </ul>
 ```
@@ -50,24 +47,20 @@ The following example shows an error and a warning notice with dismiss buttons. 
 ```html
 <ul class="notice-list">
   <li class="notice-list-item notice-list-item--success" data-notice>
-    <div class="notice-list-item-text">
-      <p>This is a success notice.</p>
-      <ul class="notice-list-item-text-button-list grid grid--gutter grid--gutter--half grid--uniform">
-        <li class="grid-col">
-          <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
-        </li>
-      </ul>
-    </div>
+    <p>This is a success notice.</p>
+    <ul class="notice-list-item-button-list grid grid--gutter grid--gutter--half grid--uniform">
+      <li class="grid-col">
+        <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
+      </li>
+    </ul>
   </li>
   <li class="notice-list-item notice-list-item--warning" data-notice>
-    <div class="notice-list-item-text">
-      <p>This is a warning notice.</p>
-      <ul class="notice-list-item-text-button-list grid grid--gutter grid--gutter--half grid--uniform">
-        <li class="grid-col">
-          <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
-        </li>
-      </ul>
-    </div>
+    <p>This is a warning notice.</p>
+    <ul class="notice-list-item-button-list grid grid--gutter grid--gutter--half grid--uniform">
+      <li class="grid-col">
+        <button type="button" aria-label="Dismiss notice" data-notice-dismiss>✕</button>
+      </li>
+    </ul>
   </li>
 </ul>
 ```
